@@ -1,0 +1,68 @@
+<div class="receipt-main">
+
+  <head>
+    <title> Gerador de Recibo </title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <script type="text/javascript">
+    var nome = prompt('Digite seu nome:', 'Nome do cliente');
+    var preco = prompt('Informe o preço do serviço:', '0');
+    var servico = prompt('Serviço prestado:', 'Serviço Prestado').toUpperCase().bold();
+  </script>
+
+
+  <div>
+    <div class="receipt-header">
+      <img name="LogoMascote" src="LogoMascote.jpg" height="98" width="187" border="0" usemap="#Map">
+    </div>
+
+    <div class="receipt-header">
+      <span id="_16.2">
+	   <br>Razão Social: ORLANDO LEITE ROLIM </span>
+	   <br>Rua Terencio Correia Ferrer, 340 - Centro - Lavras da Mangabeira-CE</span>
+	   <br>CNPJ: 04.921.682/0001-26</span>
+	   <br>Telefone: 88. 9 9258.0551</span>
+    </div>
+
+  </div>
+
+  <p class="receipt-title"><br> Recibo </p>
+
+  <div class="receipt-section", contentEditable="true">
+    <span class="receipt-label text-large">Data:</span>
+      <span class="text-large">
+        <script>
+          document.write(new Date().toLocaleDateString());
+        </script>
+
+    <span class="receipt-label"><br>Valor: </span> R$
+    <script type="text/javascript">
+      document.write(preco + ",00")
+    </script>
+
+    <span class="receipt-label"><br>Contratante:</span>
+    <script type="text/javascript">
+      document.write(nome)
+    </script>
+  </div>
+
+  <div class="receipt-section", contentEditable="true">
+    <script type="text/javascript">
+      document.write('<br>Referente à(o) ' + servico + '<br>Pelo que firmo o presente recibo em/uma via, para fins de quitação. ')
+    </script>
+  </div>
+
+  <div class="receipt-signature col-xs-1">
+    <hr class="receipt-line"></hr>
+    <p>Orlando Leite Rolim</p>
+  </div>
+
+  <div>
+    <p> Lavras da Mangabeira, Ceará,
+      <script>
+        document.write(new Date().toLocaleDateString());
+      </script>
+    </p>
+  </div>
+</div>

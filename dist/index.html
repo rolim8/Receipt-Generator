@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Gerador_de_Recibo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="receipt-main">
+
+  <script type="text/javascript">
+    var nome = prompt('Digite seu nome:');
+    var cpf = prompt('Digite seu cpf:');
+    var preco = prompt('Informe o preço do serviço:', '0');
+    var servico = prompt('Serviço prestado:');
+  </script>
+
+  <p class="receipt-title">Recibo</p>
+
+  <div class="receipt-section pull-left">
+    <span class="receipt-label text-large">Data:</span>
+    <span class="text-large">
+      <p>
+        <script>
+          document.write(new Date().toLocaleDateString());
+        </script>
+      </p>
+  </div>
+
+  <div class="pull-right receipt-section" , contentEditable="true">
+
+    <script type="text/javascript">
+      document.write("R$ " + preco + ",00")
+    </script>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="receipt-section">
+    <span class="receipt-label">Contratante:</span>
+    <script type="text/javascript">
+      document.write(nome + "(" + cpf + ")")
+    </script>
+  </div>
+
+  <div class="receipt-section">
+    <span class="receipt-label">Contratado:</span>
+    <span>Orlando Sat (04.921.682/0001-26)</span>
+  </div>
+
+  <div class="receipt-section">
+    <script type="text/javascript">
+      document.write("<br>Recebi de " + nome + " a importância de R$ " + preco +
+        ",00<br>Referente a " + servico)
+    </script>
+  </div>
+
+  <div class="receipt-section">
+    <p class="pull-right text-large">Lavras da Mangabeira,
+      <script>
+        document.write(new Date().toLocaleDateString());
+      </script>
+    </p>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="receipt-signature col-xs-6">
+    <p class="receipt-line"></p>
+    <p>Orlando Sat</p>
+    <p>04.921.682/0001-26</p>
+    <p>Lavras da Mangabeira - CE - 63300-000</p>
+  </div>
+
+  <div class="receipt-signature col-xs-6">
+    <p class="receipt-line"></p>
+    <div contentEditable="true">
+
+      <Center>
+        <script type="text/javascript">
+          document.write(nome + "<br> (" + cpf + ")")
+        </script>
+      </center>
+    </div>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>
