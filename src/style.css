@@ -1,14 +1,69 @@
+@font-face {
+  font-family: emb_bold;
+  src: url(/src/fonts/EmBauhaus_W00_Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: emb_reg;
+  src: url(/src/fonts/EmBauhaus_W00_Regular.ttf);
+  font-weight: bold;
+}
+
+
 body {
   padding: 5px;
 }
 * {
   box-sizing: border-box;
+  border-radius: 15px;
+}
+.divis{
+  padding: 20px;
+  box-sizing: border-box;
+  border-width: 10px;
+  border-radius: 20px;
 }
 .receipt-header{
   text-align: center;
-  style=" font-family:Times New Roman;
-  font-size:10px;
+  font-family: emb_bold;
+  font-size:20px;
   color:#000000;
+}
+.receipt-header-2{
+  text-align: justify;
+  font-family: arial;
+  font-size:17px;
+  color:#000000;
+
+  width: 60%;
+  float: left;
+  padding: 20px;
+}
+
+.receipt-header-3{
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  font-size:20px;
+  color:#000000;
+
+  width: 40%;
+  float: left;
+  padding: 20px;
+  border: 2px solid #000000;
+}
+
+.cli{
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-style: italic;
+}
+.receipt-section{
+  margin-top: 5px;
+  width: 100%;
+  float: left;
+  padding: 5px;
+  border: 2px solid #000000;
 }
 .receipt-main {
   display: inline-block;
@@ -24,26 +79,16 @@ body {
   font-weight: 600;
   margin: 0;
 }
-.receipt-label {
-  font-weight: 600;
-}
-.text-large {
-  font-size: 20px;
-}
-.receipt-footer {
-  text-align: center;
-  background: #ff0000;
-}
 .receipt-signature {
-  height: 80px;
-  margin: 50px 0;
+  height: 40px;
+  margin: 20px 30px;
   padding: 0 50px;
   background: #fff;
 }
 .receipt-signature .receipt-line {
   margin-bottom: 10px;
   border-bottom: 1px solid #000;
-  width: 50%;
+  width: 35%;
 }
 .receipt-signature p {
   text-align: center;
