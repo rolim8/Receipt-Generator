@@ -7,7 +7,7 @@
 
   <script type="text/javascript">
     var contratante = prompt('Nome do Cliente:', 'Nome do cliente').toUpperCase().bold();
-    var preco = prompt('Informe o preço do serviço:', '0');
+    var preco = prompt('Informe o preço do serviço: \ndica: digite também os centavos', '0,00');
     var servico = prompt('Serviço prestado:', 'Serviço Prestado').toUpperCase();
   </script>
 
@@ -41,9 +41,9 @@
       document.write(contratante)
     </script>
     
-    <span class="receipt-label"><br>A importância de </span> R$
+    <span class="receipt-label"><br>A importância de</span> R$
     <script type="text/javascript">
-      document.write(preco + ",00")
+      document.write(preco)
     </script>
 
     <span class="receipt-label"><br>Valor correspondente a </span>
