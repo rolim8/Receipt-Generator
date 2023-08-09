@@ -9,7 +9,6 @@
   font-weight: bold;
 }
 
-
 body {
   padding: 5px;
 }
@@ -17,53 +16,53 @@ body {
   box-sizing: border-box;
   border-radius: 15px;
 }
-.divis{
+.divis {
   padding: 20px;
   box-sizing: border-box;
   border-width: 10px;
   border-radius: 20px;
 }
-.receipt-header{
+.receipt-header {
   text-align: center;
   font-family: emb_bold;
-  font-size:20px;
-  color:#000000;
+  font-size: 20px;
+  color: #000000;
 }
-.receipt-header-2{
+.receipt-header-2 {
   text-align: justify;
   font-family: arial;
-  font-size:17px;
-  color:#000000;
+  font-size: 17px;
+  color: #000000;
 
   width: 60%;
   float: left;
   padding: 20px;
 }
 
-.receipt-header-3{
+.receipt-header-3 {
   text-align: center;
   font-family: arial;
   font-weight: bold;
-  font-size:20px;
-  color:#000000;
+  font-size: 20px;
+  color: #000000;
 
   width: 40%;
   float: left;
-  padding: 20px;
-  border: 2px solid #000000;
+  padding: 1px;
+  border: 1px solid #000000;
 }
 
-.cli{
+.cli {
   text-align: center;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: italic;
 }
-.receipt-section{
+.receipt-section {
   margin-top: 5px;
   width: 100%;
   float: left;
-  padding: 5px;
-  border: 2px solid #000000;
+  padding: 1px;
+  border: 1px solid #000000;
 }
 .receipt-main {
   display: inline-block;
@@ -75,7 +74,7 @@ body {
 .receipt-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 600;
   margin: 0;
 }
@@ -88,7 +87,7 @@ body {
 .receipt-signature .receipt-line {
   margin-bottom: 10px;
   border-bottom: 1px solid #000;
-  width: 35%;
+  width: 60%;
 }
 .receipt-signature p {
   text-align: center;
